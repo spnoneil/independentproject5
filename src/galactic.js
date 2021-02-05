@@ -5,11 +5,11 @@ export default class Age {
 
   calculateMercury() {
     const ageOnMercury = this.earth / .24
-    console.log(ageOnMercury)
     return Math.floor(ageOnMercury);
   }
 
   calculateVenus() {
-
+    const ageOnVenus = this.earth / .62
+    return Math.floor(ageOnVenus);
   }
 }
