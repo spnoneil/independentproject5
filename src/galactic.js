@@ -27,19 +27,18 @@ export class Age {
   }
 }
 
-export function yearsLeftNeg(ageObj) {
-  const values = Object.values(ageObj)
+export function pastExpectancy(ageObj) {
+  const values = Object.values(ageObj);
   let ageArray = [];
   for (let i = 0; i < values.length; i++) {
     if (values[i] <= 0) {
-      ageArray.push(Math.abs(values[i]))
+      ageArray.push(Math.abs(values[i]));
     }
   }
-  console.log(ageArray)
   return ageArray;
 }
 
-let age = new Age(80)
-age.calculateAge()
-age.lifeExpectancy()
-age.yearsLeft()
+// let age = new Age(80);
+// age.calculateAge();
+// age.lifeExpectancy();
+// age.yearsLeft();
