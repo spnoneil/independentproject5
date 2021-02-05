@@ -38,4 +38,8 @@ export default class Age {
     const mars = this.expectancy / 1.88;
     return Math.floor(mars)
   }
+
+  lifeExpectancyJupiter() {
+
+  }
 }
