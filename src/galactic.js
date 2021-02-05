@@ -30,6 +30,7 @@ export default class Age {
   }
 
   lifeExpectancyVenus() {
-
+    const venus = this.expectancy / .62;
+    return Math.floor(venus)
   }
 }
