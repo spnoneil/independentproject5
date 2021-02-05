@@ -1,4 +1,4 @@
-export default class Age {
+export class Age {
   constructor(earthAge) {
     this.earthAge = earthAge;
     this.earthExpectancy = 73;
@@ -27,12 +27,19 @@ export default class Age {
   }
 }
 
-function yearsLeftNeg(ageObj) {
+export function yearsLeftNeg(ageObj) {
   const values = Object.values(ageObj)
+  let ageArray = [];
   for (let i = 0; i < values.length; i++) {
-    if (values < 0) {
-      return values[i];
+    if (values[i] <= 0) {
+      ageArray.push(Math.abs(values[i]))
     }
-    return values;
   }
+  console.log(ageArray)
+  return ageArray;
 }
+
+let age = new Age(80)
+age.calculateAge()
+age.lifeExpectancy()
+age.yearsLeft()

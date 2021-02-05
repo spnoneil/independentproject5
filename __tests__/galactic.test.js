@@ -1,4 +1,4 @@
-import Age from './../src/galactic.js'
+import { Age, yearsLeftNeg } from './../src/galactic.js'
 
 describe('Age', () => {
   let age;
@@ -45,7 +45,14 @@ describe('Age', () => {
     expect(age.marsYearsLeft).toEqual(20);
     expect(age.jupiterYearsLeft).toEqual(4);
   });
-  test('if "x"Age > "x"YearsLeft, return negative number as years over expectancy', () => {
-    expect()
-  })
+});
+
+describe('Age Checker', () => {
+  let age = new Age(80)
+  age.calculateAge();
+  age.lifeExpectancy();
+  age.yearsLeft();
+  test('if "x"Age > "x"YearsLeft, return negative number to positive number array', () => {
+    expect(yearsLeftNeg(age)).toEqual([7, 29, 12, 4, 0])
+  });
 });
