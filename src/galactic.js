@@ -8,4 +8,8 @@ export default class Age {
     console.log(ageOnMercury)
     return Math.floor(ageOnMercury);
   }
+
+  calculateVenus() {
+
+  }
 }
