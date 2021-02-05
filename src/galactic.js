@@ -25,6 +25,7 @@ export default class Age {
   }
 
   lifeExpectancyMercury() {
-
+    const mercury = this.expectancy / .24;
+    return Math.floor(mercury)
   }
 }
