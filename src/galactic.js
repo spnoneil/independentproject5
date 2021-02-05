@@ -4,6 +4,8 @@ export default class Age {
   }
 
   calculateMercury() {
-
+    const ageOnMercury = this.earth / .24
+    console.log(ageOnMercury)
+    return Math.floor(ageOnMercury);
   }
 }
