@@ -25,8 +25,14 @@ export default class Age {
     this.marsYearsLeft = this.marsExpectancy - this.marsAge;
     this.jupiterYearsLeft = this.jupiterExpectancy - this.jupiterAge;
   }
+}
 
-  yearsLeftNeg() {
-
+function yearsLeftNeg(ageObj) {
+  const values = Object.values(ageObj)
+  for (let i = 0; i < values.length; i++) {
+    if (values < 0) {
+      return values[i];
+    }
+    return values;
   }
 }
