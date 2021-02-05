@@ -34,7 +34,7 @@ describe('Age', () => {
   test('should calculate life expectancy in Jupiterian years', () => {
     expect(age.lifeExpectancyJupiter()).toEqual(6);
   });
-  //   test('should compare planetary ages, return difference', () => {
-  // expect(age.calculateOverallExpectancy()).toEqual()
-  //   });
+  test('should compare earth age and expectancy, return difference', () => {
+    expect(age.calculateExpectancy()).toEqual(163, 63, 20, 4);
+  });
 });
