@@ -14,6 +14,7 @@ export default class Age {
   }
 
   calculateMars() {
-
+    const ageOnMars = this.earth / 1.88;
+    return Math.floor(ageOnMars)
   }
 }
