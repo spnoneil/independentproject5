@@ -25,4 +25,7 @@ describe('Age', () => {
   test('should calculate life expectancy in Mercurian years', () => {
     expect(age.lifeExpectancyMercury()).toEqual(304);
   });
+  test('should calculate life expectancy in Venusian years', () => {
+    expect(age.lifeExpectancyVenus()).toEqual(117);
+  });
 });
