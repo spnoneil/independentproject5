@@ -6,22 +6,26 @@ export default class Age {
 
   calculateMercury() {
     const ageOnMercury = this.earth / .24;
-    return Math.floor(ageOnMercury);
+    this.mercuryAge = Math.floor(ageOnMercury);
+    return this.mercuryAge;
   }
 
   calculateVenus() {
     const ageOnVenus = this.earth / .62;
-    return Math.floor(ageOnVenus);
+    this.venusAge = Math.floor(ageOnVenus);
+    return this.venusAge;
   }
 
   calculateMars() {
     const ageOnMars = this.earth / 1.88;
-    return Math.floor(ageOnMars);
+    this.marsAge = Math.floor(ageOnMars);
+    return this.marsAge;
   }
 
   calculateJupiter() {
     const ageOnJupiter = this.earth / 11.86;
-    return Math.floor(ageOnJupiter);
+    this.jupiterAge = Math.floor(ageOnJupiter);
+    return this.jupiterAge;
   }
 
   lifeExpectancyMercury() {
