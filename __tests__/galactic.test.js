@@ -8,6 +8,7 @@ describe('Age', () => {
     age = new Age(34);
     age.calculateAge();
     age.lifeExpectancy();
+    age.yearsLeft();
   });
 
   test('should create an age object', () => {
@@ -37,7 +38,11 @@ describe('Age', () => {
   test('should calculate life expectancy in Jupiterian years', () => {
     expect(age.jupiterExpectancy).toEqual(6);
   });
-  test('should compare earth age and expectancy, return difference', () => {
-    expect(age.yearsLeft()).toEqual(163, 63, 20, 4);
+  test('should compare age and expectancy, return difference', () => {
+    expect(age.earthYearsLeft).toEqual(39);
+    expect(age.mercuryYearsLeft).toEqual(163);
+    expect(age.venusYearsLeft).toEqual(63);
+    expect(age.marsYearsLeft).toEqual(20);
+    expect(age.jupiterYearsLeft).toEqual(4);
   });
 });

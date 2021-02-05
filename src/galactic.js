@@ -5,28 +5,24 @@ export default class Age {
   }
 
   calculateAge() {
-    const ageOnMercury = this.earthAge / .24;
-    this.mercuryAge = Math.floor(ageOnMercury);
-    const ageOnVenus = this.earthAge / .62;
-    this.venusAge = Math.floor(ageOnVenus);
-    const ageOnMars = this.earthAge / 1.88;
-    this.marsAge = Math.floor(ageOnMars);
-    const ageOnJupiter = this.earthAge / 11.86;
-    this.jupiterAge = Math.floor(ageOnJupiter);
+    this.mercuryAge = Math.floor(this.earthAge / .24);
+    this.venusAge = Math.floor(this.earthAge / .62);
+    this.marsAge = Math.floor(this.earthAge / 1.88);
+    this.jupiterAge = Math.floor(this.earthAge / 11.86);
   }
 
   lifeExpectancy() {
-    const mercury = this.earthExpectancy / .24;
-    this.mercuryExpectancy = Math.floor(mercury);
-    const venus = this.earthExpectancy / .62;
-    this.venusExpectancy = Math.floor(venus);
-    const mars = this.earthExpectancy / 1.88;
-    this.marsExpectancy = Math.floor(mars);
-    const jupiter = this.earthExpectancy / 11.86;
-    this.jupiterExpectancy = Math.floor(jupiter);
+    this.mercuryExpectancy = Math.floor(this.earthExpectancy / .24);
+    this.venusExpectancy = Math.floor(this.earthExpectancy / .62);
+    this.marsExpectancy = Math.floor(this.earthExpectancy / 1.88);
+    this.jupiterExpectancy = Math.floor(this.earthExpectancy / 11.86);
   }
 
   yearsLeft() {
-
+    this.earthYearsLeft = this.earthExpectancy - this.earthAge;
+    this.mercuryYearsLeft = this.mercuryExpectancy - this.mercuryAge;
+    this.venusYearsLeft = this.venusExpectancy - this.venusAge;
+    this.marsYearsLeft = this.marsExpectancy - this.marsAge;
+    this.jupiterYearsLeft = this.jupiterExpectancy - this.jupiterAge;
   }
 }
