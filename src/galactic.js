@@ -35,6 +35,7 @@ export default class Age {
   }
 
   lifeExpectancyMars() {
-
+    const mars = this.expectancy / 1.88;
+    return Math.floor(mars)
   }
 }
