@@ -45,4 +45,7 @@ describe('Age', () => {
     expect(age.marsYearsLeft).toEqual(20);
     expect(age.jupiterYearsLeft).toEqual(4);
   });
+  test('if "x"Age > "x"YearsLeft, return negative number as years over expectancy', () => {
+    expect()
+  })
 });
