@@ -1,6 +1,7 @@
 export default class Age {
   constructor(earth) {
     this.earth = earth;
+    this.expectancy = 73;
   }
 
   calculateMercury() {
@@ -21,5 +22,9 @@ export default class Age {
   calculateJupiter() {
     const ageOnJupiter = this.earth / 11.86;
     return Math.floor(ageOnJupiter);
+  }
+
+  lifeExpectancyMercury() {
+
   }
 }

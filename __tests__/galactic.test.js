@@ -22,4 +22,7 @@ describe('Age', () => {
   test('should calculate age in Jupiterian years', () => {
     expect(age.calculateJupiter()).toEqual(2);
   });
+  test('should calculate life expectancy in Mercurian years', () => {
+    expect(age.lifeExpectancyMercury()).toEqual(304);
+  });
 });
