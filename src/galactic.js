@@ -26,27 +26,7 @@ export default class Age {
     this.jupiterExpectancy = Math.floor(jupiter);
   }
 
-  // lifeExpectancyMercury() {
-  //   const mercury = this.earthExpectancy / .24;
-  //   return Math.floor(mercury);
-  // }
-
-  // lifeExpectancyVenus() {
-  //   const venus = this.expectancy / .62;
-  //   return Math.floor(venus);
-  // }
-
-  // lifeExpectancyMars() {
-  //   const mars = this.expectancy / 1.88;
-  //   return Math.floor(mars);
-  // }
-
-  // lifeExpectancyJupiter() {
-  //   const jupiter = this.expectancy / 11.86;
-  //   return Math.floor(jupiter);
-  // }
-
-  calculateExpectancy() {
+  yearsLeft() {
 
   }
 }

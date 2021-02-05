@@ -38,6 +38,6 @@ describe('Age', () => {
     expect(age.jupiterExpectancy).toEqual(6);
   });
   test('should compare earth age and expectancy, return difference', () => {
-    expect(age.calculateExpectancy()).toEqual(163, 63, 20, 4);
+    expect(age.yearsLeft()).toEqual(163, 63, 20, 4);
   });
 });
