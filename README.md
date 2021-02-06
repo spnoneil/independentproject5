@@ -1,34 +1,34 @@
-# (Application Name)
+# Galactic Age Calculator
 
-#### (Brief Description of Application)
+#### This program will calculate an Earthling age input and output an age in Mercurian, Venusian, Martian, and Jupiterian years
 
-#### By (Your Name Here)
+#### By Scott O'Neil
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* _JavaScript/jQuery_
+* _CSS/Bootstrap_
+* _Node.js_
+* _Coded in VSCode_
 
 ## Description
+_An exercise in learning TDD and solidifying Javascript logic. This should in no means be examined for resume purposes._
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
-
-* "npm run install"
-* "npm run build"
+* _Clone/Download from GitHub_
+* _Unzip, if necessary_
+* _Open folder in coding program of choice_
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* _Some sticky logic_
 
 ## License
+_GPL_
 
 ## Contact Information
+
+_Contact no one with any questions_
+
+Copyright (c) 2021 **_Scott O'Neil_**
