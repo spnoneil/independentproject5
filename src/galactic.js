@@ -37,8 +37,3 @@ export function pastExpectancy(ageObj) {
   }
   return ageArray;
 }
-
-// let age = new Age(80);
-// age.calculateAge();
-// age.lifeExpectancy();
-// age.yearsLeft();

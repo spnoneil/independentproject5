@@ -48,7 +48,7 @@ describe('Age', () => {
 });
 
 describe('Age Checker', () => {
-  let age = new Age(80)
+  let age = new Age(80);
   age.calculateAge();
   age.lifeExpectancy();
   age.yearsLeft();
