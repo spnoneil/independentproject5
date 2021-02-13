@@ -19,6 +19,10 @@ _An exercise in learning TDD and solidifying Javascript logic. This should in no
 * _Clone/Download from GitHub_
 * _Unzip, if necessary_
 * _Open folder in coding program of choice_
+* _In terminal, run `npm install` to install necessary dependencies_
+* _Next, run `npm run build` to generate/build page_
+* _Then, run `npm test` to test code with Jest_
+* _Finally, run `npm run start` to  generate LiveServer_
 
 ## Known Bugs
 
